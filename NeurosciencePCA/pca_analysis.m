@@ -3,7 +3,7 @@
 % to assess variance structure and identify functional clustering of areas.
 function pca_analysis()
     floc = 'lfp\lfp_';
-    subjects = ['c', 'm', 'p'];
+    subjects = ['c', 'm'];
     relAreas = {'pm', 'm1', 'ss'};
 
     for a = 1:length(relAreas)
