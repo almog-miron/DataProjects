@@ -1,0 +1,67 @@
+# Spectral Analysis of a Flapping Mechanism
+
+This project analyzes the natural resonance frequencies of a simplified mechanical model inspired by insect flight. Using high-speed video footage of a 3D-printed "flapper" device, we extract and analyze wing motion through image processing and frequency-domain signal analysis in MATLAB.
+
+## 🪰 Background
+
+Flying insects flap their wings using a complex system of muscles and elastic thoracic structures. This project focuses on a simplified analog: a mechanical flapper with two wings driven by an electromagnetic actuator.
+
+We excite the system into free oscillation and analyze the motion to determine its natural modes and resonance frequencies — critical parameters in both mechanical design and bio-inspired robotics.
+
+---
+
+## 🎯 Project Goals
+
+1. **Track wing angles** from high-speed video using image segmentation.
+2. **Extract time-series data** representing left/right wing angles.
+3. **Compute symmetric and anti-symmetric motion modes**.
+4. **Perform spectral analysis** to identify resonance frequencies.
+5. **Visualize and interpret** the physical behavior of the flapping system.
+
+---
+
+## 🛠 Methods and Techniques
+
+- **MATLAB-based image processing**
+  - Manual ROI cropping
+  - Binary thresholding and morphological operations
+  - Line fitting with `polyfit` to estimate wing angles
+- **Signal processing**
+  - Amplitude spectra via FFT
+  - Mode decomposition: symmetric vs. anti-symmetric
+- **Visualization**
+  - Time-domain plots
+  - Frequency-domain spectra
+
+---
+
+## 🧪 Sample Output (Preview)
+
+*Note: Due to data privacy, the original video cannot be shared. A synthetic demo or visual mock-up will be added here if available.*
+
+- Left/Right wing angles (over time)
+- Symmetric/Anti-symmetric mode decomposition
+- Spectrum plots revealing dominant resonance frequencies
+
+---
+
+## 📂 Repository Structure
+
+📁 VideoSpectralAnalysis/
+├── video_analyzer.m # Main function
+├── demo_data/ # sample frames
+├── README.md # This file
+└── example_outputs/ # Example plots
+
+
+---
+
+## 🚀 How to Run
+
+Make sure you have MATLAB installed.
+
+```matlab
+filename = 'Flapper_2_wings.mp4';  % or synthetic equivalent
+Fs = 5000;                         % Frame rate in Hz
+
+[thetas, freq, spectra, figs] = video_analyzer(filename, Fs);
