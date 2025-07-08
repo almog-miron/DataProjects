@@ -45,6 +45,10 @@ Training results include accuracy, loss curves, and optional visualizations.
 
 ---
 
+📜 License
+This project is for academic demonstration purposes. No commercial use without permission.
+
+
 ## 🧪 Getting Started
 
 ### 1. Setup
@@ -67,5 +71,3 @@ t10k-labels.idx1-ubyte
 Edit main_code.py to choose the experiment you want (q = 1, q = 2, etc.), then:
 python main_code.py
 
-📜 License
-This project is for academic demonstration purposes. No commercial use without permission.
