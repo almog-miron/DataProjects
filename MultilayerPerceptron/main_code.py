@@ -4,7 +4,7 @@ from utils import loadMNISTLabels, loadMNISTImages, preprocess
 from mlp_functions import backprop, test, predict
 
 # %% Load images and labels
-path = 'C:/Users/almog/PycharmProjects/MLPex/MNIST_data/'
+path = 'MNIST_data/'
 
 ytest = loadMNISTLabels(path + r'\t10k-labels.idx1-ubyte')
 ytrain = loadMNISTLabels(path + r'\train-labels.idx1-ubyte')
