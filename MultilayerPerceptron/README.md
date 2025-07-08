@@ -28,6 +28,8 @@ This project implements a simple **Multilayer Perceptron (MLP)** for handwritten
 ├── mlp_functions.py # Core MLP functions (forward, backprop, predict, test)
 ├── utils.py # Data loading and preprocessing (not provided here)
 └── MNIST_data/ # MNIST dataset files (download from official source)
+* mlp_function_pytorch - is a similar version only using Pytorch -
+* the course excercise requested us not to implement the assaigment without Pytorch
 
 
 ---
