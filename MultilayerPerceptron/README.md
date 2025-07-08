@@ -27,7 +27,7 @@ This project implements a simple **Multilayer Perceptron (MLP)** for handwritten
 ├── main_code.py # Main training/testing script
 ├── mlp_functions.py # Core MLP functions (forward, backprop, predict, test)
 ├── utils.py # Data loading and preprocessing (not provided here)
-└── MNIST_data/ # MNIST dataset files (download from official source)
+└── MNIST_data/ # MNIST dataset files (download from official source) - https://www.kaggle.com/datasets/hojjatk/mnist-dataset
 * mlp_function_pytorch - is a similar version only using Pytorch -
 * the course excercise requested us not to implement the assaigment without Pytorch, to run it change
 * "from mlp_functions import backprop, test, predict" to "from mlp_functions_pytorch import backprop, test, predict"
@@ -60,7 +60,8 @@ Ensure you have Python 3.6+ with `numpy` and `matplotlib` installed:
 
 ```bash
 pip install numpy matplotlib
-# Download MNIST Data
+# Download MNIST Data: https://www.kaggle.com/datasets/hojjatk/mnist-dataset
+# only "train-images-idx3-ubyte.gz" is missing from the github folder due to size.. 
 Place the following files inside the MNIST_data/ directory:
 
 train-images.idx3-ubyte
