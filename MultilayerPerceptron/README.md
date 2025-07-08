@@ -29,7 +29,8 @@ This project implements a simple **Multilayer Perceptron (MLP)** for handwritten
 ├── utils.py # Data loading and preprocessing (not provided here)
 └── MNIST_data/ # MNIST dataset files (download from official source)
 * mlp_function_pytorch - is a similar version only using Pytorch -
-* the course excercise requested us not to implement the assaigment without Pytorch
+* the course excercise requested us not to implement the assaigment without Pytorch, to run it change
+* "from mlp_functions import backprop, test, predict" to "from mlp_functions_pytorch import backprop, test, predict"
 
 
 ---
@@ -72,4 +73,8 @@ t10k-labels.idx1-ubyte
 
 Edit main_code.py to choose the experiment you want (q = 1, q = 2, etc.), then:
 python main_code.py
+
+mlp_function_pytorch - is a similar version only using Pytorch -
+* the course excercise requested us not to implement the assaigment without Pytorch, to run it change
+* "from mlp_functions import backprop, test, predict" to "from mlp_functions_pytorch import backprop, test, predict"
 
