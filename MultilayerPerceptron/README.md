@@ -60,7 +60,7 @@ Ensure you have Python 3.6+ with `numpy` and `matplotlib` installed:
 
 ```bash
 pip install numpy matplotlib
-2. Download MNIST Data
+# Download MNIST Data
 Place the following files inside the MNIST_data/ directory:
 
 train-images.idx3-ubyte
@@ -71,10 +71,10 @@ t10k-images.idx3-ubyte
 
 t10k-labels.idx1-ubyte
 
-Edit main_code.py to choose the experiment you want (q = 1, q = 2, etc.), then:
+# Edit main_code.py to choose the experiment you want (q = 1, q = 2, etc.), then:
 python main_code.py
 
-mlp_function_pytorch - is a similar version only using Pytorch -
-* the course excercise requested us not to implement the assaigment without Pytorch, to run it change
-* "from mlp_functions import backprop, test, predict" to "from mlp_functions_pytorch import backprop, test, predict"
+# mlp_function_pytorch - is a similar version only using Pytorch -
+# the course excercise requested us not to implement the assaigment without Pytorch, to run it comment
+# "from mlp_functions import backprop, test, predict" and uncomment "from mlp_functions_pytorch import backprop, test, predict"
 
