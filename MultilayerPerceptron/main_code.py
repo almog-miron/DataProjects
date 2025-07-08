@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from utils import loadMNISTLabels, loadMNISTImages, preprocess
 from mlp_functions import backprop, test, predict
+# from mlp_functions_pytorch import backprop, test, predict
 
 # %% Load images and labels
 path = 'MNIST_data/'
