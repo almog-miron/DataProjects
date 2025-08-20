@@ -80,7 +80,7 @@ For each subject and signal type:
 1. Place all subject `.mat` files under the `lfp/` folder.
 2. Run the main script:
  ```matlab
- analyze_pca()
+ pca_analysis()
 
 Created by Almog Miron
 For academic use in neural signal analysis, dimensionality reduction, and decoding.
