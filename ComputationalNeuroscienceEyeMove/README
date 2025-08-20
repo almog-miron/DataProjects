@@ -1,4 +1,4 @@
-pike Train Analysis & Neural Decoding
+Spike Train Analysis & Neural Decoding
 
 This project analyzes single-neuron spike trains recorded during an eye-movement direction tuning task. 
 The work combines data analysis of peri-stimulus time histograms (PSTHs) and tuning curves with data science methods for decoding stimulus direction from neural activity.
