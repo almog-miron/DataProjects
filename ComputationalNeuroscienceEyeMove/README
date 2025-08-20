@@ -1,0 +1,104 @@
+pike Train Analysis & Neural Decoding
+
+This project analyzes single-neuron spike trains recorded during an eye-movement direction tuning task. 
+The work combines data analysis of peri-stimulus time histograms (PSTHs) and tuning curves with data science methods for decoding stimulus direction from neural activity.
+
+📂 Project Structure
+
+/data/ – Contains .mat files with single-neuron recordings. Each file is a MATLAB structure with:
+
+spikes: T x N sparse matrix of spike trains (T = time in ms, N = trials).
+
+target_direction: stimulus motion direction in degrees (0–315°).
+
+target_motion: motion onset and offset times (ms).
+
+my_classifier.m – Custom classifier function to decode stimulus direction from test spike trains.
+
+test_classifier.m – Provided function to evaluate classifiers with k-leave-out cross-validation.
+
+run_test.m – Script to benchmark classifiers across multiple neurons.
+
+plots/ – Raster plots, PSTHs, tuning curves, and model fits.
+
+📊 Analysis Steps
+
+Raster Plots
+
+Visualize spike trains per trial, separated by target direction.
+
+Implemented using MATLAB’s spy function.
+
+PSTHs (Peri-Stimulus Time Histograms)
+
+Compute firing rate in 1 ms bins.
+
+Smooth with a 30 ms square window.
+
+Normalize to spikes/second.
+
+Display all 8 directions in a single plot.
+
+Direction Tuning Curves
+
+Compute average firing rate during motion per direction.
+
+Fit with:
+
+Cosine function
+
+Von-Mises function
+
+Von-Mises + baseline term
+
+Compare fits using goodness of fit metrics (e.g., R², mean squared error, AIC/BIC).
+
+Estimate the neuron’s preferred direction from fits and directly from data.
+
+Classifier
+
+Function my_classifier(train_data, test_spikes) predicts stimulus direction from spike trains.
+
+Evaluated with cross-validation via test_classifier.m.
+
+Metrics:
+
+success_id: fraction of correctly predicted directions.
+
+success_angle: mean angular error (degrees).
+
+⚖️ Key Questions Addressed
+
+How does a neuron’s firing rate depend on stimulus direction?
+
+Which tuning model (cosine, von-Mises, von-Mises+baseline) fits best?
+
+How to quantify goodness of fit and trade-offs with model complexity?
+
+Can we decode stimulus direction from spike trains using statistical classifiers?
+
+🧰 Tools & Libraries
+
+MATLAB (core analysis, plotting, fitting)
+
+Functions: spy, smooth, fittype, fit, cosd
+
+🚀 Results Overview
+
+PSTHs reveal direction-selective firing increases during motion.
+
+Tuning curves show clear orientation preference, best fit by a von-Mises distribution.
+
+Classifier achieves significantly better accuracy than random baseline (success_id ≫ 0.12, success_angle ≪ 90°).
+
+Differences observed across neurons in preferred direction and tuning sharpness.
+
+📌 Learning Outcomes
+
+Hands-on experience with neural data analysis and decoding methods.
+
+Comparison of model fits and interpretation of tuning curves.
+
+Implementation of a supervised classifier for spike-train data.
+
+Understanding trade-offs between descriptive analysis and predictive modeling.
