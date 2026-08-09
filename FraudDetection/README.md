@@ -39,9 +39,6 @@ Exact duplicate copies were removed before data splitting to reduce the risk of 
 
 After cleaning, the dataset contained **283,726 transactions**, including **473 fraud cases**.
 
-> The dataset itself is not included in this repository.  
-> Add the dataset locally as `creditcardData.csv` before running the notebook.
-
 ---
 
 ## Project Workflow
