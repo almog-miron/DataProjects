@@ -4,6 +4,8 @@ A machine learning project for detecting fraudulent credit card transactions in 
 
 The project covers the full end-to-end workflow: data-quality checks, exploratory data analysis, model comparison, hyperparameter tuning, cross-validation, feature-importance analysis, decision-threshold optimization, and final evaluation on a held-out test set.
 
+Download CSV at https://www.kaggle.com/code/gpreda/credit-card-fraud-detection-predictive-models/input
+
 ---
 
 ## Project Objective
