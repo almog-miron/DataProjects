@@ -50,9 +50,6 @@ After cleaning, the dataset contained:
 
 The fraud rate remained approximately **0.17%**.
 
-> The dataset itself is not included in this repository.  
-> Add it locally as `creditcardData.csv` before running the notebook.
-
 ---
 
 ## Project Workflow
