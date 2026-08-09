@@ -564,7 +564,7 @@ The main conclusions from this project are:
 ```text
 credit-card-fraud-detection/
 │
-├── credit_card_fraud_detection.ipynb
+├── main.ipynb
 ├── README.md
 ├── requirements.txt
 └── creditcardData.csv        # local only / not tracked by Git
